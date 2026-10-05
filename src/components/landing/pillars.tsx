@@ -59,9 +59,9 @@ function VerificationDiagram() {
       {/* evidence nodes */}
       <div className="flex w-full max-w-[280px] items-start justify-between px-1">
         {[
-          { icon: Fingerprint, label: "Caller script" },
-          { icon: FileText, label: "Tip scanner" },
-          { icon: Users, label: "Rehearsal" },
+          { icon: Fingerprint, label: "9 Scam scripts" },
+          { icon: FileText, label: "8 Specialists" },
+          { icon: Users, label: "1930 Helpline" },
         ].map((n) => (
           <div key={n.label} className="flex flex-col items-center gap-2">
             <div className="grid h-12 w-12 place-items-center rounded-xl border border-white/12 bg-white/[0.05]">
@@ -86,9 +86,9 @@ function RiskStack() {
           <TriangleAlert className="h-4 w-4 text-amber-400" />
         </div>
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-bold text-white">Fund overlap flagged</p>
+          <p className="text-xs font-bold text-white">Moneylender APR converted</p>
           <p className="truncate text-[10px] text-zinc-500">
-            34% same holdings · computed in 0.4s
+            5 Rs/100 = 60%/yr · KCC saves ₹26,500
           </p>
         </div>
         <Radar className="h-4 w-4 shrink-0 text-volt" />
@@ -100,9 +100,9 @@ function RiskStack() {
 /* --- Cell D: explainable dashboard mini ----------------------------- */
 function DashboardMini() {
   const bars = [
-    { label: "Fee efficiency", pct: 92 },
-    { label: "Diversification", pct: 78 },
-    { label: "Emergency runway", pct: 64 },
+    { label: "Rural & DBT tools", pct: 100 },
+    { label: "Scam shield & 1930", pct: 95 },
+    { label: "Portfolio X-Ray", pct: 86 },
   ];
   const r = 26;
   const c = 2 * Math.PI * r;
@@ -110,9 +110,9 @@ function DashboardMini() {
     <div className="mt-1 overflow-hidden rounded-xl border border-white/10 bg-[#101310]">
       <div className="flex items-center gap-2 border-b border-white/8 px-3 py-2.5">
         <span className="h-1.5 w-1.5 rounded-full bg-volt" />
-        <p className="text-[10px] font-medium text-zinc-400">JARVIS · Portfolio X-Ray</p>
+        <p className="text-[10px] font-medium text-zinc-400">JARVIS · 5 Audience Baskets</p>
         <span className="ml-auto rounded-full bg-volt/15 px-2 py-0.5 text-[9px] font-bold text-volt">
-          HEALTHY
+          FIVE BASKETS
         </span>
       </div>
       <div className="flex items-center gap-4 p-3.5">
@@ -143,9 +143,42 @@ function DashboardMini() {
         </div>
       </div>
       <div className="flex gap-1.5 px-3.5 pb-3">
-        <span className="rounded-full border border-white/10 px-2 py-0.5 text-[8.5px] text-zinc-400">Glass-box math</span>
-        <span className="rounded-full border border-white/10 px-2 py-0.5 text-[8.5px] text-zinc-400">Hash-chained ledger</span>
+        <span className="rounded-full border border-white/10 px-2 py-0.5 text-[8.5px] text-zinc-400">English &amp; हिन्दी</span>
+        <span className="rounded-full border border-white/10 px-2 py-0.5 text-[8.5px] text-zinc-400">532 Verified Tests</span>
       </div>
+    </div>
+  );
+}
+
+/* --- Cell C: audit ledger visual --------------------------------- */
+function AuditLedgerVisual() {
+  return (
+    <div className="relative flex flex-1 flex-col justify-center space-y-2 py-1">
+      <div className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 text-[10px]">
+        <div className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-volt" />
+          <span className="font-mono text-zinc-300">block_#412</span>
+        </div>
+        <span className="font-mono text-[9px] text-zinc-500">hash: 9f8a...3c21</span>
+        <span className="rounded bg-volt/15 px-1.5 py-0.5 text-[8.5px] font-bold text-volt">LINKED</span>
+      </div>
+
+      <div className="flex items-center justify-center">
+        <span className="h-3 w-px border-l border-dashed border-volt/40" />
+      </div>
+
+      <div className="flex items-center justify-between rounded-xl border border-volt/25 bg-volt/[0.05] px-3 py-2 text-[10px] shadow-[0_0_20px_-5px_rgba(184,241,77,0.15)]">
+        <div className="flex items-center gap-2">
+          <span className="h-1.5 w-1.5 rounded-full bg-volt animate-ping-soft" />
+          <span className="font-mono font-semibold text-white">block_#413</span>
+        </div>
+        <span className="font-mono text-[9px] text-zinc-400">prev: 9f8a...3c21</span>
+        <span className="rounded bg-volt px-1.5 py-0.5 text-[8.5px] font-bold text-[#101502]">VERIFIED</span>
+      </div>
+
+      <p className="pt-1 text-center text-[9px] font-bold tracking-[0.25em] text-volt/60">
+        ARITHMETIC APPROVES · NEVER AN LLM
+      </p>
     </div>
   );
 }
@@ -176,7 +209,7 @@ export default function Pillars() {
         <div className="text-center">
           <motion.p {...fade()} className="text-xs font-semibold tracking-[0.3em]">
             <ShinyText
-              text="· WHAT YOU GET"
+              text="· AUDIENCE-LED SCOPE"
               className="font-semibold text-volt/90"
               speed={4}
             />
@@ -185,7 +218,7 @@ export default function Pillars() {
             {...fade(0.06)}
             className="mx-auto mt-3 max-w-3xl font-display text-3xl font-semibold tracking-tight text-white sm:text-5xl"
           >
-            Protect, learn, and decide — end to end.
+            A guard, guide, and calculator for everyday money.
           </motion.h2>
         </div>
 
@@ -196,12 +229,12 @@ export default function Pillars() {
             <CellGlow />
             <VerificationDiagram />
             <h3 className="relative mt-4 text-base font-bold leading-snug text-white">
-              Scam Recovery Coach &amp; Tip Scanner
+              Scam Protection &amp; 1930 Recovery Coach
             </h3>
             <p className="relative mt-2 text-xs leading-relaxed text-zinc-400">
-              Rehearse a fake bank-KYC call by voice in English or Hindi, scan a
-              &quot;guaranteed return&quot; WhatsApp tip, and get a calm,
-              scripted next step — before the money moves.
+              Nine scam scripts, an 8-specialist tip checker, scam-call
+              rehearsal, and an emergency recovery coach guiding the crucial
+              first hour through the 1930 national helpline.
             </p>
           </motion.article>
 
@@ -210,36 +243,29 @@ export default function Pillars() {
             <CellGlow />
             <RiskStack />
             <h3 className="relative mt-5 text-base font-bold leading-snug text-white">
-              Fee Drag &amp; Fund Overlap X-Ray
+              Rural Money Tools &amp; Group Ledger
             </h3>
             <p className="relative mt-2 text-xs leading-relaxed text-zinc-400">
-              Drag a slider and watch a 2% fee eat a third of twenty years.
-              See, side by side, the shares two of your funds already hold.
+              Converts moneylender quotes (&quot;5 Rs per 100&quot;) to a true
+              60% yearly rate, tracks DBT government schemes, checks UPI
+              safety, and runs offline self-help group ledgers.
             </p>
           </motion.article>
 
-          {/* C — decision engine: the travelling card docks into this recess */}
+          {/* C — decision engine */}
           <motion.article
             {...fade(0.26)}
             className={CELL + " lg:col-start-2 lg:row-start-2"}
           >
             <CellGlow />
-            <div className="relative min-h-[168px] flex-1 rounded-2xl border border-dashed border-volt/30 bg-volt/[0.04]">
-              <div
-                aria-hidden="true"
-                className="absolute inset-6 rounded-full bg-volt/[0.08] blur-2xl"
-              />
-              <p className="absolute inset-x-0 bottom-3 text-center text-[9px] font-bold tracking-[0.28em] text-volt/50">
-                ARITHMETIC APPROVES · NOT AN LLM
-              </p>
-            </div>
+            <AuditLedgerVisual />
             <h3 className="relative mt-4 text-base font-bold leading-snug text-white">
-              Risk Firewall &amp; Tamper-Evident Ledger
+              Govern, Risk Firewall &amp; Tamper-Evident Ledger
             </h3>
             <p className="relative mt-2 text-xs leading-relaxed text-zinc-400">
-              A deterministic risk engine that never imports a language model.
-              Arithmetic approves or blocks, and a hash-chained ledger proves
-              nothing was edited after the fact.
+              A deterministic risk engine checking trades against limits,
+              rebalance simulator, and hash-chained SQLite ledger. Every decision
+              carries the previous entry&apos;s fingerprint.
             </p>
           </motion.article>
 
@@ -252,12 +278,12 @@ export default function Pillars() {
             <DashboardMini />
             <div className="flex-1" />
             <h3 className="relative mt-4 text-base font-bold leading-snug text-white">
-              Bilingual Voice Assistant &amp; Research Desk
+              Bilingual Assistant, WhatsApp &amp; Research Desk
             </h3>
             <p className="relative mt-2 text-xs leading-relaxed text-zinc-400">
-              Ask by voice or text in English or हिन्दी. Four AI analysts and a
-              forced dissenter research any listed stock behind a citation gate
-              — every number on screen is a door you can open.
+              Ask in Hindi or English by voice, text, or WhatsApp simulator.
+              Features a 25-point stock research desk, 32 plain learning
+              topics, and five tailored starting baskets.
             </p>
           </motion.article>
         </div>

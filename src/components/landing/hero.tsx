@@ -34,42 +34,42 @@ type Profile = {
 const PROFILES: Profile[] = [
   {
     id: 0,
-    name: "Retirement Portfolio",
-    initials: "RP",
-    kind: "8 stocks · 2 funds",
+    name: "Farmer Loan Check",
+    initials: "FL",
+    kind: "Moneylender vs Bank",
     score: 86,
-    signals: "24 signals · 12 holdings",
-    evidence: "Low fee drag · no fund overlap found",
-    terms: "₹18.4L · 6.2% blended yield",
+    signals: "'5 Rs per 100' quote · ₹50,000",
+    evidence: "Uncovers 60%/yr APR · KCC offers 7%",
+    terms: "Save ₹26,500 interest with formal credit",
   },
   {
     id: 1,
-    name: "Growth SIP Basket",
-    initials: "GS",
-    kind: "4 mutual funds",
-    score: 72,
-    signals: "19 signals · 4 factsheets",
-    evidence: "Moderate overlap · 1.8% avg expense ratio",
-    terms: "₹6.2L · 34% holdings duplicated",
+    name: "Scam Shield & 1930",
+    initials: "SS",
+    kind: "Fake Police / Digital Arrest",
+    score: 95,
+    signals: "8 specialist analysis · high threat",
+    evidence: "9 scam scripts checked · 1930 helpline",
+    terms: "First-hour response saves stolen funds",
   },
   {
     id: 2,
-    name: "First-time Investor",
-    initials: "FI",
-    kind: "New portfolio",
-    score: 41,
-    signals: "9 signals · thin history",
-    evidence: "2 high-fee funds found · no emergency fund",
-    terms: "₹85K · 3 months runway",
+    name: "Retail Fund X-Ray",
+    initials: "RX",
+    kind: "2 Mutual Funds · ₹6.2L SIP",
+    score: 48,
+    signals: "Fee drag & overlap analysis",
+    evidence: "2% fee eats 33% of 20yr growth",
+    terms: "Switch saves ₹2,10,000 in fee drag",
   },
 ];
 
 const NAV_LINKS = [
   { label: "Home", href: "#home", active: true },
-  { label: "Platform", href: "#pillars", active: false },
-  { label: "Explainability", href: "#explainable", active: false },
-  { label: "Why JARVIS", href: "#problem", active: false },
-  { label: "How it works", href: "#how-it-works", active: false },
+  { label: "Five Baskets", href: "#pillars", active: false },
+  { label: "Three Promises", href: "#explainable", active: false },
+  { label: "The Problem", href: "#problem", active: false },
+  { label: "How It Works", href: "#how-it-works", active: false },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -435,7 +435,7 @@ function TrustCheckWidget() {
       {/* Portfolio row */}
       <div className="flex items-center justify-between gap-3">
         <p className="text-[11px] font-medium tracking-[0.14em] text-zinc-400">
-          PORTFOLIO
+          AUDIENCE BASKET
         </p>
         <div className="relative">
           <button
@@ -508,7 +508,7 @@ function TrustCheckWidget() {
       {/* Score row */}
       <div className="flex items-center justify-between gap-3">
         <p className="text-[11px] font-medium tracking-[0.14em] text-zinc-400">
-          HEALTH SCORE
+          TRUST &amp; SAFETY INDEX
         </p>
         {phase === "done" && (
           <span
@@ -567,7 +567,7 @@ function TrustCheckWidget() {
         disabled={phase === "analyzing"}
         className="mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-volt py-3 text-sm font-bold text-[#101502] transition hover:bg-volt-soft disabled:opacity-70"
       >
-        {phase === "done" ? "Re-run X-Ray" : "Run Portfolio X-Ray"}
+        {phase === "done" ? "Re-evaluate Basket" : "Assess Basket & Arithmetic"}
         <ArrowRight className="h-4 w-4" />
       </button>
     </div>
@@ -580,10 +580,10 @@ function TrustCheckWidget() {
 
 function NetworkStatCard() {
   const avatars = [
-    { i: "PK", g: "from-orange-400 to-rose-500" },
-    { i: "SD", g: "from-sky-400 to-teal-400" },
-    { i: "MJ", g: "from-violet-400 to-fuchsia-500" },
-    { i: "RA", g: "from-amber-300 to-orange-500" },
+    { i: "BK", g: "from-orange-400 to-rose-500" },
+    { i: "FR", g: "from-sky-400 to-teal-400" },
+    { i: "SH", g: "from-violet-400 to-fuchsia-500" },
+    { i: "IN", g: "from-amber-300 to-orange-500" },
   ];
   return (
     <div className="w-full max-w-[300px] rounded-3xl border border-white/10 bg-[#1b1e24]/90 p-5 shadow-2xl shadow-black/60 backdrop-blur-md">
@@ -600,10 +600,10 @@ function NetworkStatCard() {
         </p>
       </div>
       <p className="mt-2 text-4xl font-extrabold tracking-tight text-white">
-        <CountUp to={385} duration={2.2} />
+        <CountUp to={532} duration={2.2} />
       </p>
       <p className="mt-1 text-xs text-zinc-400">
-        Including blind routing-evaluation sets
+        Across 35 files · zero look-ahead verified
       </p>
       <div className="mt-4 flex items-center">
         <div className="flex -space-x-2.5">
@@ -632,7 +632,7 @@ function TrustedRow() {
   return (
     <div className="relative z-10 mx-auto mt-7 w-full max-w-6xl px-6 pb-4 xl:mt-8">
       <p className="text-center text-[11px] font-semibold tracking-[0.3em] text-zinc-500">
-        RUNS ENTIRELY ON YOUR MACHINE — NO CLOUD, NO PAID API
+        RUNS ENTIRELY ON YOUR MACHINE — NO CLOUD, NO BROKER, NO GUESSWORK
       </p>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-zinc-500">
         <span className="text-lg font-extrabold lowercase tracking-tight transition hover:text-zinc-300">
@@ -649,10 +649,10 @@ function TrustedRow() {
         </span>
         <span className="flex items-center gap-1.5 text-lg font-bold transition hover:text-zinc-300">
           <span className="h-3.5 w-3.5 rounded-full border-2 border-current" />
-          Kokoro TTS
+          Pyodide
         </span>
         <span className="text-base font-semibold tracking-widest transition hover:text-zinc-300">
-          THREE·JS
+          1930 HELPLINE
         </span>
         <span className="text-lg font-extrabold tracking-tight transition hover:text-zinc-300">
           react
@@ -786,7 +786,7 @@ export default function Hero() {
           >
             <ShieldCheck className="h-4 w-4 text-volt" />
             <ShinyText
-              text="100% local · Bilingual · Paper trading only"
+              text="100% local · Bilingual (EN + हिन्दी) · Money, plainly"
               className="text-xs font-medium text-zinc-300/85"
               speed={5}
             />
@@ -806,7 +806,7 @@ export default function Hero() {
 
           <div className="mt-4 max-w-xl">
             <BlurText
-              text="A free, local, bilingual assistant that helps ordinary savers protect their money, understand it, and keep it honest. Every number is computed by code you can read — never guessed by an AI."
+              text="A free, local, bilingual money guide and scam shield, built around the people who need it most and organised so each audience gets only what it needs. Every number computed by code — never guessed by an AI."
               className="text-base text-zinc-400 sm:text-lg"
               delay={28}
             />
@@ -822,7 +822,7 @@ export default function Hero() {
               href="#pillars"
               className="group flex items-center gap-2 rounded-full bg-volt px-7 py-3.5 text-sm font-bold text-[#101502] transition hover:bg-volt-soft"
             >
-              X-Ray My Portfolio
+              Explore 5 Baskets
               <ArrowRight className="h-4 w-4 transition group-hover:translate-x-0.5" />
             </a>
             <a

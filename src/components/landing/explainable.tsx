@@ -16,35 +16,35 @@ const PROMISES = [
   {
     icon: FileText,
     title: "The model never writes a number",
-    desc: "Figures come from calculators you can read; the text comes from templates. The model may only pick which tool to run.",
+    desc: "Numbers come from deterministic code and dated public data. An optional local model only picks from a fixed list.",
   },
   {
     icon: Gauge,
-    title: "Unsure means ask, not guess",
-    desc: "Below the confidence threshold, JARVIS offers three suggestions instead of inventing an answer.",
+    title: "Protect before money moves",
+    desc: "Spot scams, predatory 60% loans, or missed DBT benefits before they cost money; with immediate 1930 recovery steps.",
   },
   {
     icon: BadgeCheck,
     title: "Every number is a door",
-    desc: "Tap any figure to see the arithmetic behind it, in plain English or हिन्दी — no data-science degree required.",
+    desc: "Tap any figure to see the arithmetic behind it, in plain English or हिन्दी — no guesswork, no hallucinated math.",
   },
   {
     icon: ScrollText,
-    title: "Hash-chained and testable",
-    desc: "A tamper-evident audit ledger, a time machine, and 385 passing tests with honest numbers published.",
+    title: "Hash-chained audit record",
+    desc: "Every decision carries the previous entry's cryptographic fingerprint. 532 automated tests verify every calculator.",
   },
 ];
 
 const POSITIVES = [
-  "Expense ratios below category median on 6 of 8 holdings",
-  "No duplicate shares across your two equity funds",
-  "Emergency fund covers 7 months of expenses",
-  "Tax shield found ₹18,400 of harvestable losses",
+  "Moneylender '5 Rs / 100' converted to 60%/yr APR",
+  "Formal KCC loan at 7% saves ₹26,500 in yearly interest",
+  "DBT PM-Kisan instalment verified and on schedule",
+  "9 scam scripts & 1930 recovery active in Hindi & English",
 ];
 
 const RISKS = [
-  "2008 crash replay: −34% drawdown on current mix",
-  "One fund charges 1.8% — ₹2.1L drag over 20 years",
+  "Moneylender charges ₹30,000 yearly interest on ₹50,000",
+  "One mutual fund charges 2% — ₹2.1L drag over 20 years",
 ];
 
 function ScoreRing() {
@@ -114,10 +114,10 @@ function DashboardMock() {
           <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
           <p className="ml-3 text-xs font-medium text-zinc-500">
-            JARVIS · Portfolio X-Ray
+            JARVIS · Everyday Money Engine
           </p>
           <span className="ml-auto rounded-full bg-volt/15 px-2.5 py-1 text-[10px] font-bold text-volt">
-            GLASS BOX
+            THREE PROMISES
           </span>
         </div>
 
@@ -128,17 +128,17 @@ function DashboardMock() {
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2.5">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-volt to-volt-deep text-xs font-bold text-[#101502]">
-                  RP
+                  FL
                 </span>
                 <div>
-                  <p className="text-sm font-bold text-white">Retirement Portfolio</p>
+                  <p className="text-sm font-bold text-white">Farmer Loan vs Bank Credit</p>
                   <p className="text-[11px] text-zinc-500">
-                    8 stocks · 2 funds · ₹18,40,000
+                    ₹50,000 principal · 12-month tenure
                   </p>
                 </div>
               </div>
               <div className="mt-3.5 flex flex-wrap gap-1.5">
-                {["Fees checked", "Overlap scanned", "Crash replayed"].map(
+                {["60% Moneylender APR", "7% Formal KCC", "1930 Active"].map(
                   (chip) => (
                     <span
                       key={chip}
@@ -187,8 +187,8 @@ function DashboardMock() {
                 ))}
               </ul>
               <p className="mt-4 rounded-xl bg-white/[0.04] px-3 py-2 text-[10px] leading-relaxed text-zinc-400">
-                Why this matters: a 1.8% fee is not small. Over 20 years it
-                compounds into roughly a third of your growth.
+                Why this matters: &apos;5 rupees per hundred&apos; means 60% per year —
+                nearly ten times what a formal bank or KCC loan costs.
               </p>
             </div>
           </div>
@@ -197,13 +197,13 @@ function DashboardMock() {
           <div className="mt-5 flex flex-col gap-3 rounded-2xl border border-volt/20 bg-volt/[0.06] p-4 sm:flex-row sm:items-center">
             <div className="flex-1">
               <p className="text-[10px] font-bold tracking-[0.2em] text-volt">
-                BIGGEST WIN AVAILABLE · COMPUTED, NOT GUESSED
+                PLAIN ARITHMETIC · ZERO GUESSWORK
               </p>
               <p className="mt-1 text-sm font-bold text-white">
-                Switch one fund · save ₹2,10,000 over 20 years
+                Switch to Formal Bank Loan · Save ₹26,500 in Year 1
               </p>
               <p className="mt-0.5 text-[11px] text-zinc-400">
-                Same exposure, lower expense ratio — the arithmetic is on the
+                Formal KCC at 7% vs informal 60% APR — the arithmetic is on the
                 next screen.
               </p>
             </div>
@@ -228,7 +228,7 @@ export default function Explainable() {
       id="explainable"
       className="relative flex min-h-[100svh] items-center overflow-hidden bg-coal"
     >
-      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:gap-12 xl:grid-cols-[minmax(0,1fr)_300px_minmax(0,1.15fr)] xl:gap-8">
+      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:gap-12 xl:gap-16">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 14 }}
@@ -238,7 +238,7 @@ export default function Explainable() {
             className="text-xs font-bold tracking-[0.3em]"
           >
             <ShinyText
-              text="GLASS-BOX BY DESIGN"
+              text="THE THREE PROMISES"
               className="font-bold text-orange-400/85"
               speed={4}
             />
@@ -250,11 +250,11 @@ export default function Explainable() {
             transition={{ duration: 0.6, delay: 0.06 }}
             className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl"
           >
-            Every number
+            Protect. Explain.
             <br />
-            comes with{" "}
+            Stay{" "}
             <span className="bg-gradient-to-b from-orange-300 to-orange-600 bg-clip-text text-transparent">
-              its arithmetic.
+              honest.
             </span>
           </motion.h2>
           <motion.p
@@ -264,11 +264,10 @@ export default function Explainable() {
             transition={{ duration: 0.6, delay: 0.12 }}
             className="mt-5 text-sm leading-relaxed text-zinc-400 sm:text-base"
           >
-            JARVIS never asks you to trust the algorithm. The risk engine does
-            not import a language model, and the model is never allowed to
-            produce a figure — it may only pick which calculator to run. Tap any
-            number and the working opens up. If you can&apos;t see why, it
-            doesn&apos;t ship.
+            JARVIS answers money questions plainly in Hindi or English. The
+            numbers come from code and dated public data, never from a language
+            model. An optional local model only picks which tool to run from a
+            closed list — it never writes a figure. Nothing says buy, sell or hold.
           </motion.p>
 
           <div className="mt-7 grid grid-cols-2 gap-x-4 gap-y-5">
@@ -290,14 +289,6 @@ export default function Explainable() {
               </motion.div>
             ))}
           </div>
-        </div>
-
-        {/* center: designed parking slot for the travelling card (xl+) */}
-        <div
-          className="relative hidden min-h-[420px] xl:block"
-          aria-hidden="true"
-        >
-          <div className="absolute inset-x-6 inset-y-24 rounded-full bg-volt/[0.07] blur-[70px]" />
         </div>
 
         <DashboardMock />

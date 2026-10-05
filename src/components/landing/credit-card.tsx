@@ -95,18 +95,18 @@ export default function CreditCardArt() {
               <div className="mt-2.5 flex items-end justify-between sm:mt-3">
                 <div>
                   <p className="text-[6.5px] font-semibold tracking-[0.28em] text-zinc-500 sm:text-[8px]">
-                    PORTFOLIO
+                    SCOPE
                   </p>
                   <p className="mt-0.5 text-[9.5px] font-bold tracking-[0.16em] text-zinc-200 [text-shadow:0_1px_1px_rgba(0,0,0,0.8)] sm:text-[11px]">
-                    PAPER TRADING ONLY
+                    MONEY, PLAINLY
                   </p>
                 </div>
                 <div className="text-right">
                   <p className="text-[6.5px] font-semibold tracking-[0.28em] text-zinc-500 sm:text-[8px]">
-                    HEALTH SCORE
+                    AUTOMATED TESTS
                   </p>
                   <p className="mt-0.5 text-[9.5px] font-black tracking-[0.16em] text-volt-soft [text-shadow:0_0_10px_rgba(184,241,77,0.45)] sm:text-[11px]">
-                    86 / 100
+                    532 / 532
                   </p>
                 </div>
               </div>

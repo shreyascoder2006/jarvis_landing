@@ -22,24 +22,26 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "JARVIS // ALPHA OS — A Free, Local Assistant That Protects Your Money",
+  title: "JARVIS — money, plainly | Free, Local Money Guide & Scam Shield",
   description:
-    "A free, local, bilingual (English/Hindi) assistant that guards against scams, exposes hidden fund fees and overlap, and explains every number — no cloud, no broker, no guesswork.",
+    "A free, local, bilingual money guide and scam shield, built around the people who need it most — scam protection, loan costs, government benefits, investing explained, and an honest record of decisions.",
   keywords: [
-    "personal finance assistant",
+    "JARVIS money plainly",
     "scam protection",
+    "1930 helpline recovery",
+    "moneylender loan calculator",
+    "rural finance tools",
+    "DBT government schemes",
     "mutual fund overlap",
-    "explainable AI",
-    "portfolio x-ray",
     "local AI assistant",
   ],
   icons: {
     icon: "/logo.svg",
   },
   openGraph: {
-    title: "JARVIS // ALPHA OS — A Free, Local Assistant That Protects Your Money",
+    title: "JARVIS — money, plainly | Free, Local Money Guide & Scam Shield",
     description:
-      "Protect, learn, and decide with confidence — every number computed by code you can read, not guessed by an AI.",
+      "Protect, explain, and stay honest — every number computed by code you can read, never guessed by an AI.",
     siteName: "JARVIS",
     type: "website",
   },

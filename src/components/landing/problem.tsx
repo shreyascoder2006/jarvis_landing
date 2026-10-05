@@ -89,7 +89,7 @@ export default function Problem() {
         <div className="text-center">
           <motion.p {...fade()} className="text-xs font-semibold tracking-[0.3em]">
             <ShinyText
-              text="· WHY JARVIS?"
+              text="· THE PROBLEM IN NUMBERS"
               className="font-semibold text-volt/90"
               speed={4}
             />
@@ -98,28 +98,25 @@ export default function Problem() {
             {...fade(0.06)}
             className="mx-auto mt-3 max-w-3xl font-display text-3xl font-semibold tracking-tight text-white sm:text-5xl"
           >
-            Three things cost households money. None needs a prediction to fix.
+            Three invisible losses cost households money. None needs a prediction to fix.
           </motion.h2>
         </div>
 
-        {/* two stat clusters + open center slot for the travelling card */}
-        <div className="grid flex-1 items-center gap-8 py-6 lg:grid-cols-[1fr_480px_1fr] lg:gap-4">
+        {/* two stat clusters */}
+        <div className="mx-auto grid w-full max-w-4xl flex-1 items-center gap-8 py-6 sm:grid-cols-2 lg:gap-16">
           <Cluster
-            title="Scam calls you can rehearse before they happen"
-            desc="Fake bank-KYC calls, 'digital arrest' video calls, WhatsApp guaranteed-return groups. They work because victims are rushed and alone — so practise them, out loud, in English or हिन्दी."
+            title="Scam calls & fraud you can rehearse before they strike"
+            desc="₹22,845 Cr lost in 2024 (up 206%). Fake police, digital arrests, and fake KYC work because victims are rushed. Rehearse 9 scripts in English or हिन्दी with 1930 recovery."
           >
-            <CountUp to={3} duration={2.2} />
+            <CountUp to={9} suffix=" scripts" duration={2.2} />
           </Cluster>
 
-          {/* open slot — the credit card parks here while this section is in view */}
-          <div className="relative hidden min-h-[260px] lg:block" aria-hidden="true" />
-
           <Cluster
-            title="Of 20 years' growth eaten by a 2% fee"
-            desc="A 'small' expense ratio compounds into a third of your corpus — and two funds quietly holding the same shares doubles nothing but cost."
+            title="'5 rupees per hundred' hides a 60% yearly rate"
+            desc="Informal credit runs 24% to 150% a year, while formal bank loans cost 6–20%. Quoted as a small monthly figure, a 60% APR is invisible until JARVIS computes the math."
             delay={0.1}
           >
-            <CountUp to={33} suffix="%" duration={2.2} />
+            <CountUp to={60} suffix="%" duration={2.2} />
           </Cluster>
         </div>
       </div>
@@ -131,15 +128,15 @@ export default function Problem() {
       >
         <TickStrip />
         <div className="whitespace-nowrap rounded-2xl border border-volt/30 bg-gradient-to-b from-volt/15 to-volt/[0.04] px-5 py-2.5 text-lg font-bold text-white shadow-[0_0_34px_-10px_rgba(184,241,77,0.6)] sm:px-8 sm:py-3 sm:text-2xl">
-          3 scams
+          9 scam scripts
         </div>
         <TickStrip />
         <div className="whitespace-nowrap rounded-2xl border border-volt/30 bg-gradient-to-b from-volt/15 to-volt/[0.04] px-5 py-2.5 text-lg font-bold text-white shadow-[0_0_34px_-10px_rgba(184,241,77,0.6)] sm:px-8 sm:py-3 sm:text-2xl">
-          33%
+          60% loan APR
         </div>
         <TickStrip />
         <div className="whitespace-nowrap rounded-2xl border border-volt/30 bg-gradient-to-b from-volt/15 to-volt/[0.04] px-5 py-2.5 text-lg font-bold text-white shadow-[0_0_34px_-10px_rgba(184,241,77,0.6)] sm:px-8 sm:py-3 sm:text-2xl">
-          0 months
+          33% fee drag
         </div>
         <TickStrip />
       </motion.div>
@@ -149,15 +146,15 @@ export default function Problem() {
         <motion.div {...fade(0.22)} className="mx-auto max-w-md text-center">
           <Connector up />
           <h3 className="mt-3 text-base font-bold text-white sm:text-lg">
-            Panic selling, with no safety net
+            A 2% fee silently eats one-third of 20 years' growth
           </h3>
           <p className="mt-2.5 text-xs leading-relaxed text-zinc-400">
-            Selling at the bottom of a crash, with no idea how many months of
-            cash you actually have. JARVIS replays the crash on your own
-            holdings and measures your runway in months.
+            Small expense ratios compound into massive losses over time, while
+            overlapping mutual funds double fees with zero extra diversification.
+            JARVIS calculates every rupee lost before you commit.
           </p>
           <div className="mt-4 font-display text-6xl font-medium tracking-tight text-volt [text-shadow:0_0_36px_rgba(184,241,77,0.35)] sm:text-7xl">
-            0 months
+            <CountUp to={33} suffix="%" duration={2.2} />
           </div>
         </motion.div>
       </div>

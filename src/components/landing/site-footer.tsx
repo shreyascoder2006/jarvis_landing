@@ -18,11 +18,11 @@ const SOCIALS = [
 ];
 
 const HELPFUL = [
-  "Safety & Privacy",
-  "Architecture",
-  "Assistant",
-  "Testing",
-  "Setup",
+  "Five Baskets",
+  "Scam Protection (1930)",
+  "Rural Money Tools",
+  "WhatsApp Simulator",
+  "Govern & Audit",
 ];
 
 export default function SiteFooter() {
@@ -42,9 +42,9 @@ export default function SiteFooter() {
             transition={{ duration: 0.7 }}
           >
             <h2 className="text-4xl font-black leading-[1.05] tracking-tight text-white sm:text-6xl">
-              Your Money,
+              Money,
               <br />
-              Kept Honest
+              Plainly
               <span className="text-volt">.</span>
             </h2>
             <a
@@ -69,7 +69,7 @@ export default function SiteFooter() {
             <div>
               <p className="text-sm font-bold text-white">Runs on</p>
               <p className="mt-3 text-sm text-zinc-400">Your machine</p>
-              <p className="text-sm text-zinc-400">localhost:8000</p>
+              <p className="text-sm text-zinc-400">localhost:3000</p>
               <p className="mt-6 text-sm font-bold text-white">Social</p>
               <div className="mt-3 space-y-2">
                 {SOCIALS.map((s) => (
@@ -93,12 +93,12 @@ export default function SiteFooter() {
                 github.com/vizsh
               </a>
               <p className="text-sm text-zinc-400">Jarvis_Hedge_Fund</p>
-              <p className="mt-6 text-sm font-bold text-white">Documentation</p>
+              <p className="mt-6 text-sm font-bold text-white">Architecture &amp; Scope</p>
               <div className="mt-3 space-y-2">
                 {HELPFUL.map((l) => (
                   <a
                     key={l}
-                    href="#home"
+                    href="#pillars"
                     className="block text-sm text-zinc-400 transition hover:text-white"
                   >
                     {l}
@@ -112,10 +112,10 @@ export default function SiteFooter() {
         {/* divider + bottom bar */}
         <div className="mt-14 border-t border-white/10 py-6">
           <div className="flex flex-col items-center justify-between gap-4 text-xs text-zinc-500 sm:flex-row">
-            <p>© JARVIS // ALPHA OS 2026</p>
+            <p>© JARVIS 2026 · money, plainly</p>
             <p className="flex items-center gap-1.5">
               <Heart className="h-3.5 w-3.5 fill-volt text-volt" />
-              Not investment advice · paper trading only
+              Not financial advice · Describes and explains · 0 numbers from AI
             </p>
             <p className="flex items-center gap-2">
               Built with
